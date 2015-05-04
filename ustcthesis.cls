@@ -145,8 +145,8 @@
 \def\bibfont{\wuhao}
 \setlength{\bibsep}{0pt plus1pt minus1pt}
 \setlength{\bibhang}{2\ccwd}%Applied only to author-year style
-\RequirePackage[format=hang,labelsep=quad]{caption3}
-%\RequirePackage[format=hang,labelsep=quad]{caption3}
+\PassOptionsToPackage{format=hang,labelsep=quad,style=base}{caption}
+%\RequirePackage[format=hang,labelsep=quad]{caption}
 \DeclareCaptionFont{c5size}{\wuhao}
 \captionsetup{labelfont={c5size,bf}}
 \captionsetup{textfont=c5size}
