@@ -120,7 +120,7 @@
 	headsep=0.25cm,
 	headheight=1.5cm,
 	footskip=0.79cm,
-%	showframe%uncomment this if you want to check the page setup.
+    %showframe %uncomment this if you want to check the page setup.
 	]{geometry}
 \RequirePackage{multicol}
 \RequirePackage{multirow}
@@ -233,8 +233,8 @@
 \fi
 \CTEXoptions[listfigurename={\ustc@ustclofname}]
 \CTEXoptions[listtablename={\ustc@ustclotname}]
-\newcommand\ustclot{\cleardoublepage\addcontentsline{toc}{chapter}{\ustc@ustclotname}\listoftables}
-\newcommand\ustclof{\cleardoublepage\addcontentsline{toc}{chapter}{\ustc@ustclofname}\listoffigures}
+\newcommand\ustclot{\cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\ustc@ustclotname}\listoftables}
+\newcommand\ustclof{\cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\ustc@ustclofname}\listoffigures}
 
 %New mathematical environments
 \ifustc@notchinese
